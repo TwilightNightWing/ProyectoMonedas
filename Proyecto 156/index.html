@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script
+    src="https://aframe.io/releases/0.6.0/aframe.min.js">
+    </script>
+    
+    <script
+    src="https://cdn.jsdelivr.net/gh/n5ro /aframe-physics-system@v4.0.1/dist/aframe-physics-system.min.js">
+    </script>
+
+    <scripts
+    src="Game.js"></scripts>
+    
+</head>
+<body>
+    <a-scene id="main-scene">
+      <a-sky id="main-container" radius="5000" color="#98DAFC"></a-sky>
+
+     
+      <!-- Cámara -->
+      <a-camera id="camera" wasd-controls="enabled:false;">
+        <!-- Título de la app -->
+        <a-entity
+          id="app-title"
+          position="0 0.73 -1"
+          text="font: exo2bold; align: center; width: 2; color: #000; value: Encuentra las monedas"
+        >
+          <a-entity
+            id="app-subtitle"
+            position="0 -0.1 0"
+            text="font: dejavu; align: center; width: 1; color: #0F184E; value: Encuentra las monedas"
+          ></a-entity>
+        </a-entity>
+
+        
+        >
+        <!-- Temporizador -->
+        <a-entity position="-23.5 29.3 0">
+            <a-entity 
+            position=""
+            text="font: aileronsemibold; width: 14; color: black; value: Tiempo/nrestante"
+            ></a-entity>
+            <a-entity
+             id="timer"
+             position="-9.8 0.3 0"
+            text="font:exo2bold; align: center; width: 30; color: black; value: 00:00"
+            ></a-entity>
+        </a-entity>
+        
+    
+      </a-camera>
+    </a-scene>
+  </body>
+</html>
